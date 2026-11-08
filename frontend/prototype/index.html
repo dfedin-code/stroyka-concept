@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="ru" class="flight-page">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <!-- title / description: demo.json home (the same text as the page properties of public/index.php); Open Graph: render.ts og() = Stroyka\View::og -->
+    <title>Обслуживание строительных площадок в Москве — Vikilini</title>
+    <meta name="description" content="Уборка стройплощадки в ходе работ, вывоз строительных отходов, пост мойки колёс, бытовой городок и уборка перед сдачей. Один подрядчик, график по стадиям." />
+    <meta property="og:type" content="website" />
+<meta property="og:locale" content="ru_RU" />
+<meta property="og:site_name" content="Vikilini · стройплощадки" />
+<meta property="og:title" content="Обслуживание строительных площадок в Москве — Vikilini" />
+<meta property="og:description" content="Уборка стройплощадки в ходе работ, вывоз строительных отходов, пост мойки колёс, бытовой городок и уборка перед сдачей. Один подрядчик, график по стадиям." />
+    <!-- prototype stand: never indexable -->
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#f7f7f7" />
+    <link rel="icon" href="../../assets/logo-vikilini-xbt6cPCO.png" type="image/png" />
+    <!-- boot snippet: the "js" class before the first paint. One literal text with header.php (ui/boot.ts). -->
+    <script>document.documentElement.classList.add("js")</script><script>/[?&]vk=([^&]*,)?blockload/.test(location.search)&&document.documentElement.classList.contains("flight-page")&&document.documentElement.classList.add("is-preloading")</script>
+    <!-- zone streaming hints (vite.config.ts `sceneHints`; PHP: Assets::sceneHints): empty while the build has no scene -->
+    <link rel="preload" as="fetch" crossorigin fetchpriority="low" href="../../scene/scene.json" media="(prefers-reduced-motion: no-preference)" />
+    <link rel="preload" as="fetch" crossorigin fetchpriority="low" href="../../scene/z-gate-lite.light.6574f097.glb" media="(prefers-reduced-motion: no-preference) and (max-width: 767.98px), (prefers-reduced-motion: no-preference) and (orientation: portrait), (prefers-reduced-motion: no-preference) and (pointer: coarse), (prefers-reduced-motion: no-preference) and (pointer: none)" />
+    <link rel="preload" as="fetch" crossorigin fetchpriority="low" href="../../scene/z-gate-lite.full.3d929ebc.glb" media="(prefers-reduced-motion: no-preference) and (min-width: 768px) and (orientation: landscape) and (pointer: fine)" />
+    <link rel="preload" as="script" crossorigin fetchpriority="low" href="../../js/runtime-DUtWf-sD.js" media="(prefers-reduced-motion: no-preference)" />
+    <script type="module" crossorigin src="../../js/main-DanZ1eAY.js"></script>
+    <link rel="stylesheet" crossorigin href="../../assets/main-DmIOB-Cs.css">
+  </head>
+  <body data-prototype="skeleton" data-cms-integration="NOT_RUN">
+    <a class="skip-link" href="#main">К содержимому</a>
+
+    <!-- Progress chip of the real-time scene. Hidden unless ui/preloader.ts sets <html class="is-loading3d"> (JS + a scene in the build). Same markup as partials/preloader.php. -->
+    <div class="preloader" data-preloader>
+      <div class="preloader__inner">
+        <p class="preloader__title">Загружаем площадку</p>
+        <div class="preloader__bar" role="progressbar" aria-label="Загрузка 3D-сцены" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span class="preloader__fill" data-fill></span></div>
+        <p class="preloader__status" data-status role="status">Загружаем сцену</p>
+        <button class="preloader__skip" type="button" data-skip hidden aria-label="Пропустить загрузку 3D">Пропустить</button>
+      </div>
+    </div>
+
+    <!-- header.php: the markup comes from frontend/pages/render.ts (header) -->
+    <header class="site-header">
+<a class="site-header__logo" href="/stroyka-concept/frontend/prototype/index.html" aria-label="Vikilini · стройплощадки — на главную"><img src="../../assets/logo-vikilini-xbt6cPCO.png" width="516" height="178" alt="VIKILINI" /><span class="brand__sub">стройплощадки</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle><span></span><i class="sr-only">Меню</i></button>
+<nav class="site-nav" id="site-nav" aria-label="Основная навигация" data-menu>
+<ul><li><a href="/stroyka-concept/uslugi/">Услуги</a></li><li><a href="/stroyka-concept/obekty/">Объекты</a></li><li><a href="/stroyka-concept/prices/">Цены</a></li><li><a href="/stroyka-concept/stati/">Статьи</a></li><li><a href="/stroyka-concept/contact/">Контакты</a></li></ul>
+<button class="anim-toggle" type="button" aria-pressed="true" data-anim-toggle data-press>Анимация</button>
+<a class="btn btn--sm" href="#request" data-press>Запросить расчёт</a>
+</nav>
+</header>
+
+    <main id="main" data-flight data-flight-state="poster">
+      <!-- The stage: a fixed layer behind the beat texts (partials/flight-stage.php). Only the first still is in the HTML (the LCP and the no-JS picture);
+           ui/flight.ts adds the other stills (static mode) and, once the build has a scene, the real-time canvas. Decorative. -->
+      <div class="stage" data-stage aria-hidden="true">
+        <picture class="stage__layer is-on" data-layer="gate">
+          <source media="(min-width: 768px) and (orientation: landscape)" srcset="../../assets/poster-desktop-BksB3NRr.webp" />
+          <img src="../../assets/poster-mobile-BVPHw8Op.webp" alt="" fetchpriority="high" decoding="async" />
+        </picture>
+      </div>
+
+      <!-- Six beats = six full-screen snap sections (component stroyka:home.flight). The text is plain HTML on a white plaque; the stage never carries content. -->
+      <section class="beat beat--hero" id="gate" data-beat="gate" aria-labelledby="h-gate">
+<div class="beat__body">
+<p class="eyebrow">Vikilini · стройплощадки</p>
+<h1 id="h-gate">Обслуживание строительных площадок</h1>
+<p class="lead">Один подрядчик и один график на всю площадку — по стадиям стройки.</p>
+<ul class="checklist"><li>Выезд и мойка колёс</li><li>Уборка в ходе работ</li><li>Отходы и бытовки</li></ul>
+<div class="beat__actions"><a class="btn" href="#request">Запросить расчёт</a><a class="link-quiet" href="/stroyka-concept/uslugi/">Состав услуг</a></div>
+</div>
+</section>
+<section class="beat" id="camp" data-beat="camp" aria-labelledby="h-camp">
+<div class="beat__body">
+<p class="eyebrow">Бытовой городок</p>
+<h2 id="h-camp">Бытовой городок в порядке</h2>
+<p class="lead">Уборка по графику смен, расходники и отчёт о состоянии каждого помещения.</p>
+<ul class="checklist"><li>Бытовки и раздевалки</li><li>Санузлы и душевые</li><li>Расходные материалы</li></ul>
+<div class="beat__actions"><a class="link-quiet" href="/stroyka-concept/uslugi/bytovoj-gorodok/">Обслуживание городка</a></div>
+</div>
+</section>
+<section class="beat" id="floor" data-beat="floor" aria-labelledby="h-floor">
+<div class="beat__body">
+<p class="eyebrow">Уборка в ходе работ</p>
+<h2 id="h-floor">Чистый фронт работ для смежников</h2>
+<p class="lead">Собираем мусор по этажам, обеспыливаем, держим свободными проходы и лестницы. По графику участка, а не по звонку.</p>
+<ul class="checklist"><li>Мусор по этажам</li><li>Обеспыливание</li><li>Проходы и лестницы</li></ul>
+<div class="beat__actions"><a class="link-quiet" href="/stroyka-concept/uslugi/uborka-stroitelnoj-ploshhadki/">Уборка в ходе строительства</a></div>
+</div>
+</section>
+<section class="beat" id="waste" data-beat="waste" aria-labelledby="h-waste">
+<div class="beat__body">
+<p class="eyebrow">Строительные отходы</p>
+<h2 id="h-waste">Отходы: график и документы</h2>
+<p class="lead">Перевозчик и место размещения — в договоре, документы по вывозу — у вас.</p>
+<ul class="checklist"><li>Контейнеры и рукава</li><li>Погрузка и сортировка</li><li>Документы по вывозу</li></ul>
+<div class="beat__actions"><a class="link-quiet" href="/stroyka-concept/uslugi/vyvoz-stroitelnyh-othodov/">Вывоз отходов</a></div>
+</div>
+</section>
+<section class="beat" id="handover" data-beat="handover" aria-labelledby="h-handover">
+<div class="beat__body">
+<p class="eyebrow">Перед сдачей</p>
+<h2 id="h-handover">Объект чистый к приёмке</h2>
+<p class="lead">Черновая и чистовая уборка: окна и витражи, плёнка и следы клея, полы, лифты, общие зоны. План — от даты осмотра.</p>
+<ul class="checklist"><li>Окна и витражи</li><li>Плёнка и следы клея</li><li>Полы и лифты</li></ul>
+<div class="beat__actions"><a class="link-quiet" href="/stroyka-concept/uslugi/uborka-pered-sdachej/">Уборка перед сдачей</a></div>
+</div>
+</section>
+<section class="beat beat--final" id="final" data-beat="final" aria-labelledby="h-final">
+<div class="beat__body">
+<p class="eyebrow">Следующий шаг</p>
+<h2 id="h-final">Расскажите об объекте</h2>
+<p class="lead">Тип объекта, стадия и нужные работы: этого хватит для первого разговора. Остальное уточним на площадке.</p>
+<div class="beat__actions"><a class="btn" href="#request">Запросить расчёт</a></div>
+</div>
+</section>
+
+      <!-- home-sections (partials/home-sections.php): one snap area taller than the screen -->
+      <div class="after-flight" data-after-flight>
+<section class="section section--services" id="services" aria-labelledby="h-services"><div class="section__inner">
+<header class="section__head"><h2 id="h-services" data-reveal data-words>Услуги на площадке</h2><p class="section__lead">Пять групп работ закрывают площадку целиком. Берите одну или все — по одному договору и одному графику.</p></header>
+<ul class="card-grid"><li class="card-grid__item"><a class="link-card" href="/stroyka-concept/uslugi/uborka-stroitelnoj-ploshhadki/" data-reveal data-lift data-spot><span class="link-card__title">Уборка площадки в ходе строительства</span><span class="link-card__text">Территория, проезды, этажи и лестницы весь цикл стройки. Состав и частота меняются вместе со стадией.</span><span class="link-card__more" aria-hidden="true">Подробнее</span></a></li><li class="card-grid__item"><a class="link-card" href="/stroyka-concept/uslugi/vyvoz-stroitelnyh-othodov/" data-reveal data-lift data-spot><span class="link-card__title">Сбор и вывоз строительных отходов</span><span class="link-card__text">Контейнеры, мусоросбросные рукава, погрузка и сортировка. Акты и документы по вывозу остаются у вас.</span><span class="link-card__more" aria-hidden="true">Подробнее</span></a></li><li class="card-grid__item"><a class="link-card" href="/stroyka-concept/uslugi/moyka-koles-i-vyezd/" data-reveal data-lift data-spot><span class="link-card__title">Выезд и пункт мойки колёс</span><span class="link-card__text">Пост мойки работает каждую смену, выезд и примыкающая дорога чистые. То, что видно с улицы.</span><span class="link-card__more" aria-hidden="true">Подробнее</span></a></li><li class="card-grid__item"><a class="link-card" href="/stroyka-concept/uslugi/bytovoj-gorodok/" data-reveal data-lift data-spot><span class="link-card__title">Обслуживание бытового городка</span><span class="link-card__text">Бытовки, раздевалки, санузлы и душевые по графику смен. Расходники пополняем, состояние фиксируем.</span><span class="link-card__more" aria-hidden="true">Подробнее</span></a></li><li class="card-grid__item"><a class="link-card" href="/stroyka-concept/uslugi/uborka-pered-sdachej/" data-reveal data-lift data-spot><span class="link-card__title">Уборка перед сдачей объекта</span><span class="link-card__text">Черновая и чистовая уборка к осмотру: окна и витражи, плёнка, полы, лифты и общие зоны.</span><span class="link-card__more" aria-hidden="true">Подробнее</span></a></li></ul>
+<p class="section__more"><a class="link-quiet" href="/stroyka-concept/uslugi/">Все услуги, включая снег</a></p>
+</div></section>
+<section class="section section--objects" id="objects" aria-labelledby="h-objects"><div class="section__inner">
+<header class="section__head"><h2 id="h-objects" data-reveal data-words>Типы объектов</h2><p class="section__lead">У жилого комплекса, склада и школы разные режим, частота и документы. Учитываем это до старта.</p></header>
+<ul class="card-grid"><li class="card-grid__item"><a class="link-card" href="/stroyka-concept/obekty/zhilye-kompleksy/" data-reveal data-lift data-spot><span class="link-card__title">Жилые комплексы</span><span class="link-card__text">Несколько корпусов, сдача очередями и большой бытовой городок.</span><span class="link-card__more" aria-hidden="true">Подробнее</span></a></li><li class="card-grid__item"><a class="link-card" href="/stroyka-concept/obekty/kommercheskaya-nedvizhimost/" data-reveal data-lift data-spot><span class="link-card__title">Коммерческая недвижимость</span><span class="link-card__text">Офисы, торговые и бизнес-центры: много стекла и сжатые сроки перед открытием.</span><span class="link-card__more" aria-hidden="true">Подробнее</span></a></li><li class="card-grid__item"><a class="link-card" href="/stroyka-concept/obekty/sklady-i-proizvodstvo/" data-reveal data-lift data-spot><span class="link-card__title">Склады и производство</span><span class="link-card__text">Большие площади полов, пыль от бетона и работа рядом с техникой.</span><span class="link-card__more" aria-hidden="true">Подробнее</span></a></li><li class="card-grid__item"><a class="link-card" href="/stroyka-concept/obekty/socialnye-obekty/" data-reveal data-lift data-spot><span class="link-card__title">Социальные объекты</span><span class="link-card__text">Школы, детские сады, поликлиники и другие объекты по госконтракту.</span><span class="link-card__more" aria-hidden="true">Подробнее</span></a></li></ul>
+</div></section>
+<section class="section section--process" id="process" aria-labelledby="h-process"><div class="section__inner">
+<header class="section__head"><h2 id="h-process" data-reveal data-words>Как начинаем работу</h2></header>
+<div class="process" data-reveal><span class="process__line" data-draw aria-hidden="true"></span><ol class="steps"><li class="step" data-node><p class="step__title">Заявка</p><p class="step__text">Описываете объект и работы — сколько известно.</p></li><li class="step" data-node><p class="step__title">Выезд на объект</p><p class="step__text">Смотрим площадку и график стройки с прорабом.</p></li><li class="step" data-node><p class="step__title">Предложение</p><p class="step__text">Состав, частота и цена по видам работ.</p></li><li class="step" data-node><p class="step__title">Договор</p><p class="step__text">Фиксируем график, отчёты и время реакции.</p></li><li class="step" data-node><p class="step__title">Старт</p><p class="step__text">Выходим по графику, отчитываемся по форме.</p></li></ol></div>
+</div></section>
+<section class="section section--deliver" id="deliver" aria-labelledby="h-deliver"><div class="section__inner">
+<header class="section__head"><h2 id="h-deliver" data-reveal data-words>Что остаётся у вас на руках</h2></header>
+<div class="deliver" data-reveal><ul class="scope-list"><li>Акт выполненных работ за период</li><li>Фотоотчёт по согласованной форме</li><li>Журнал поста мойки по сменам</li><li>Акты и документы по вывозу отходов</li><li>Чек-лист состояния бытового городка</li></ul></div>
+</div></section>
+<section class="section section--faq" id="faq" aria-labelledby="h-faq"><div class="section__inner">
+<header class="section__head"><h2 id="h-faq" data-reveal data-words>Частые вопросы</h2></header>
+<div class="faq__list" data-reveal><details class="faq__item" data-accordion><summary>Можно заказать одну услугу, а не всё сразу?</summary><div class="faq__answer"><p>Да. Каждую группу работ можно взять отдельно. Если позже понадобятся другие, они войдут в тот же договор и график.</p></div></details><details class="faq__item" data-accordion><summary>Как вы считаете стоимость?</summary><div class="faq__answer"><p>После выезда на площадку. Цена зависит от стадии, площади, частоты, состава работ и объёма отходов. В предложении разбиваем её по видам работ, чтобы её было удобно сверить со сметой.</p></div></details><details class="faq__item" data-accordion><summary>Как вы отчитываетесь о работе?</summary><div class="faq__answer"><p>Акт выполненных работ за период и фотоотчёт по форме, которую согласуем при заключении договора. По посту мойки — журнал по сменам, по бытовому городку — чек-лист, по отходам — акты по вывозу и копии документов перевозчика.</p></div></details><details class="faq__item" data-accordion><summary>Кто перевозит отходы?</summary><div class="faq__answer"><p>Перевозчик-партнёр, у которого есть право на транспортирование отходов I–⁠IV классов опасности. Называем его и объект размещения в договоре и передаём копии их документов до начала вывоза. За весь процесс перед вами отвечаем мы.</p></div></details></div>
+<p class="section__more"><a class="link-quiet" href="/stroyka-concept/faq/">Все вопросы</a></p>
+</div></section>
+<section class="section section--articles" id="articles" aria-labelledby="h-articles"><div class="section__inner">
+<header class="section__head"><h2 id="h-articles" data-reveal data-words>Нормы и практика</h2></header>
+<ul class="card-grid"><li class="card-grid__item"><a class="link-card" href="/stroyka-concept/stati/uborka-pered-priemkoj-obekta/" data-reveal data-lift data-spot><span class="link-card__meta">Сдача объекта</span><span class="link-card__title">Уборка перед приёмкой объекта: как спланировать</span><span class="link-card__text">Как построить черновую и чистовую уборку от даты осмотра и не получить замечаний к чистоте.</span><span class="link-card__more" aria-hidden="true">Подробнее</span></a></li><li class="card-grid__item"><a class="link-card" href="/stroyka-concept/stati/mojka-koles-na-strojploshhadke-trebovaniya/" data-reveal data-lift data-spot><span class="link-card__meta">Выезд и мойка колёс</span><span class="link-card__title">Мойка колёс на стройплощадке в Москве: что требуют правила</span><span class="link-card__text">Какие пункты мойки допускают московские правила, что меняется зимой и за что штрафуют по статье 8.16 Кодекса Москвы.</span><span class="link-card__more" aria-hidden="true">Подробнее</span></a></li><li class="card-grid__item"><a class="link-card" href="/stroyka-concept/stati/stroitelnye-othody-dokumenty/" data-reveal data-lift data-spot><span class="link-card__meta">Отходы</span><span class="link-card__title">Строительные отходы: кто перевозит и какие документы нужны</span><span class="link-card__text">Класс опасности строительного мусора, право на перевозку, разрешение на рейс в Москве и документы, которые стоит запросить у подрядчика.</span><span class="link-card__more" aria-hidden="true">Подробнее</span></a></li></ul>
+</div></section>
+<section class="section section--contacts" id="contacts" aria-labelledby="h-contacts" data-blueprint>
+<span data-reveal data-sweep aria-hidden="true"></span>
+<div class="section__inner contacts">
+<div class="contacts__text"><h2 id="h-contacts" data-reveal data-words>Контакты строительного направления</h2><p class="contacts__cta"><a class="btn" href="#request" data-press>Запросить расчёт</a></p></div>
+<dl class="contacts__list" data-reveal>
+<div><dt>Телефон</dt><dd>[телефон]</dd></div>
+<div><dt>Эл. почта</dt><dd>[e-mail]</dd></div>
+<div><dt>Часы работы</dt><dd>[часы работы]</dd></div>
+</dl>
+</div>
+</section>
+</div>
+
+      <section class="request" id="request" aria-labelledby="h-request">
+<div class="request__inner">
+<h2 id="h-request">Запрос предложения</h2>
+<p class="request__lead">Заполните то, что известно сейчас. Остальное уточним по телефону или на площадке.</p>
+<form class="form" method="dialog" novalidate data-demo-form>
+<input type="hidden" name="service" value="" />
+<div class="field"><label for="f-name">Имя</label><input id="f-name" name="name" type="text" autocomplete="name" maxlength="80" aria-describedby="e-name" required /><p class="field__error" id="e-name" aria-live="polite"></p></div>
+<div class="field"><label for="f-phone">Телефон</label><input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" aria-describedby="h-phone e-phone" required /><p class="field__hint" id="h-phone">Можно вставить из буфера в любом формате</p><p class="field__error" id="e-phone" aria-live="polite"></p></div>
+<div class="field"><label for="f-company">Компания <span class="opt">(по желанию)</span></label><input id="f-company" name="company" type="text" autocomplete="organization" maxlength="120" /></div>
+<div class="field"><label for="f-email">Эл. почта <span class="opt">(по желанию)</span></label><input id="f-email" name="email" type="email" autocomplete="email" maxlength="120" aria-describedby="e-email" /><p class="field__error" id="e-email" aria-live="polite"></p></div>
+<div class="field"><label for="f-role">Ваша роль <span class="opt">(по желанию)</span></label><select id="f-role" name="role"><option value="">Выберите</option><option>Генподрядчик</option><option>Подрядчик</option><option>Застройщик</option><option>Технический заказчик</option><option>Управляющая компания</option><option>Другое</option></select></div>
+<div class="field"><label for="f-object">Тип объекта <span class="opt">(по желанию)</span></label><select id="f-object" name="object"><option value="">Выберите</option><option>Жилые комплексы</option><option>Коммерческая недвижимость</option><option>Склады и производство</option><option>Социальные объекты</option><option>Реконструкция и капремонт</option><option>Другое</option></select></div>
+<div class="field"><label for="f-stage">Стадия <span class="opt">(по желанию)</span></label><select id="f-stage" name="stage"><option value="">Выберите</option><option>Котлован</option><option>Каркас</option><option>Отделка</option><option>Сдача</option><option>Эксплуатация</option></select></div>
+<div class="field"><label for="f-district">Район <span class="opt">(по желанию)</span></label><input id="f-district" name="district" type="text" maxlength="120" /></div>
+<fieldset class="field field--wide works"><legend>Нужные работы <span class="opt">(по желанию)</span></legend>
+<label class="check"><input type="checkbox" name="works" value="uborka-stroitelnoj-ploshhadki" /><span>Уборка площадки в ходе строительства</span></label>
+<label class="check"><input type="checkbox" name="works" value="vyvoz-stroitelnyh-othodov" /><span>Сбор и вывоз строительных отходов</span></label>
+<label class="check"><input type="checkbox" name="works" value="moyka-koles-i-vyezd" /><span>Выезд и пункт мойки колёс</span></label>
+<label class="check"><input type="checkbox" name="works" value="bytovoj-gorodok" /><span>Обслуживание бытового городка</span></label>
+<label class="check"><input type="checkbox" name="works" value="uborka-pered-sdachej" /><span>Уборка перед сдачей объекта</span></label>
+<label class="check"><input type="checkbox" name="works" value="sezonnye-raboty" /><span>Сезонные работы</span></label>
+</fieldset>
+<div class="field"><label for="f-area">Площадь, м² <span class="opt">(по желанию)</span></label><input id="f-area" name="area" type="number" inputmode="decimal" min="1" step="any" aria-describedby="h-area e-area" /><p class="field__hint" id="h-area">Примерно: территория или этажи</p><p class="field__error" id="e-area" aria-live="polite"></p></div>
+<div class="field"><label for="f-period">Срок или периодичность <span class="opt">(по желанию)</span></label><input id="f-period" name="period" type="text" maxlength="120" aria-describedby="h-period" /><p class="field__hint" id="h-period">Например: на весь срок стройки или разово к дате осмотра</p></div>
+<div class="field field--wide"><label for="f-comment">Комментарий <span class="opt">(по желанию)</span></label><textarea id="f-comment" name="comment" maxlength="1000" aria-describedby="e-comment"></textarea><p class="field__error" id="e-comment" aria-live="polite"></p></div>
+<div class="field field--wide"><label class="check"><input id="f-consent" name="consent" type="checkbox" aria-describedby="e-consent" required /><span>Согласен на обработку персональных данных по <a href="/stroyka-concept/politika-konfidencialnosti/">политике</a></span></label><p class="field__error" id="e-consent" aria-live="polite"></p></div>
+<div class="form__actions"><button class="btn" type="submit" data-press>Отправить запрос</button><p class="form__status" role="status" aria-live="polite" data-form-status></p><p class="form__alt" data-form-alt hidden>Позвоните: [телефон] или напишите: [e-mail]</p></div>
+</form>
+</div>
+</section>
+    </main>
+
+    <footer class="site-footer">
+<div class="site-footer__top">
+<div class="site-footer__brand">
+<a class="site-footer__logo" href="/stroyka-concept/frontend/prototype/index.html" aria-label="Vikilini · стройплощадки — на главную"><img src="../../assets/logo-vikilini-xbt6cPCO.png" width="516" height="178" alt="VIKILINI" /></a>
+<p>Выезд, этажи, отходы, бытовой городок и сдача объекта — один подрядчик на площадку.</p>
+<p><a href="https://vikilini.ru/">Основной сайт Vikilini: vikilini.ru</a></p>
+</div>
+<nav class="site-footer__col" aria-labelledby="f-nav">
+<p class="site-footer__title" id="f-nav">Разделы</p>
+<ul><li><a href="/stroyka-concept/uslugi/">Услуги</a></li><li><a href="/stroyka-concept/obekty/">Объекты</a></li><li><a href="/stroyka-concept/prices/">Цены</a></li><li><a href="/stroyka-concept/stati/">Статьи</a></li><li><a href="/stroyka-concept/contact/">Контакты</a></li><li><a href="/stroyka-concept/faq/">Вопросы и ответы</a></li></ul>
+</nav>
+<nav class="site-footer__col" aria-labelledby="f-svc">
+<p class="site-footer__title" id="f-svc">Услуги</p>
+<ul><li><a href="/stroyka-concept/uslugi/uborka-stroitelnoj-ploshhadki/">Уборка площадки в ходе строительства</a></li><li><a href="/stroyka-concept/uslugi/vyvoz-stroitelnyh-othodov/">Сбор и вывоз строительных отходов</a></li><li><a href="/stroyka-concept/uslugi/moyka-koles-i-vyezd/">Выезд и пункт мойки колёс</a></li><li><a href="/stroyka-concept/uslugi/bytovoj-gorodok/">Обслуживание бытового городка</a></li><li><a href="/stroyka-concept/uslugi/uborka-pered-sdachej/">Уборка перед сдачей объекта</a></li><li><a href="/stroyka-concept/uslugi/sezonnye-raboty/">Сезонные работы</a></li></ul>
+</nav>
+<div class="site-footer__col site-footer__contacts">
+<p class="site-footer__title">Контакты</p>
+<dl>
+<div><dt>Телефон</dt><dd>[телефон]</dd></div>
+<div><dt>Эл. почта</dt><dd>[e-mail]</dd></div>
+<div><dt>Адрес</dt><dd>[адрес]</dd></div>
+</dl>
+</div>
+</div>
+<div class="site-footer__bottom">
+<p class="site-footer__legal"><a href="/stroyka-concept/politika-konfidencialnosti/">Политика обработки персональных данных</a> · [юрлицо]</p>
+</div>
+</footer>
+  </body>
+</html>
